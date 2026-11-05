@@ -82,16 +82,4 @@ npm start
 
 ---
 
-## 🔑 Default Accounts (Seeded Data)
 
-### Admin Account (Uploads photos & programs):
-- **Username**: `admin`
-- **Password**: `admin123` (or `greenroots9090`)
-
-### Donor Accounts (Community tree donors):
-All pre-seeded demo donors share the password `greenroots123`:
-- `aarav.sharma.green@gmail.com`
-- `priya.patel.trees@gmail.com`
-- `manish.kumar.trees@gmail.com`
-- `rohit.verma.eco@gmail.com`
-- `ananya.iyer.earth@gmail.com`

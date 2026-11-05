@@ -1,0 +1,6 @@
+{
+  "name": "GreenRoots",
+  "description": "Interactive reforestation platform with geotagged tree tracking, carbon impact calculators, live community activity, and verified donor galleries.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ==========================================================================
+   Responsive Utilities & Global Media Queries
+   ========================================================================== */
+
+/* Navbar responsive adjustments */
+@media (max-width: 768px) {
+  .nav-desktop-links {
+    display: none !important;
+  }
+  .nav-mobile-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-mobile-menu {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-desktop-links {
+    display: flex !important;
+  }
+  .nav-mobile-toggle {
+    display: none !important;
+  }
+}
+
+/* Hero Section adjustments on mobile */
+@media (max-width: 960px) {
+  .hero-flex-wrapper {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 2rem !important;
+  }
+  .hero-flex-wrapper .hero-text-col {
+    text-align: center !important;
+    flex: 1 1 100% !important;
+  }
+  .hero-flex-wrapper .hero-actions {
+    justify-content: center !important;
+  }
+  .hero-flex-wrapper .hero-feed-col {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/* UserProfile layout for small screens */
+@media (max-width: 768px) {
+  .userprofile-layout {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  .userprofile-sidebar {
+    width: 100% !important;
+    flex: 1 1 100% !important;
+  }
+}
+
+/* Admin Profile responsive adjustments */
+@media (max-width: 640px) {
+  .admin-container {
+    padding: 16px !important;
+    margin: 20px 10px !important;
+  }
+  .admin-btn-group {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .admin-btn-group button {
+    width: 100% !important;
+  }
+}
+
+/* Modal lightbox responsive adjustments */
+@media (max-width: 768px) {
+  .modal-responsive-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem !important;
+  }
+  .modal-responsive-content {
+    padding: 1.2rem !important;
+    max-height: 95vh !important;
+    border-radius: 12px !important;
+  }
+}
+
+/* Generic container padding for mobile */
+@media (max-width: 480px) {
+  .responsive-section-padding {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .responsive-compact-text {
+    font-size: 0.9rem !important;
+  }
+}
